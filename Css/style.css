@@ -1,0 +1,315 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: "Cairo", sans-serif;
+    color: rgb(75, 75, 74);
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+html {
+    scroll-behavior: smooth;
+    background-color: rgba(238, 238, 238, 0.34)
+}
+body {
+    display: block;
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    height: fit-content;
+    min-height: 30vh;
+    background-color: #E0AED0 !important;
+    padding-bottom: 12px;
+}
+.contanier {
+    min-width: 338px;
+    margin: auto;
+    overflow: hidden
+}
+a {
+    text-decoration: none;
+    color: black
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+.img img {width: 100%}
+main {
+    display: block;
+    width: calc(100% - 5%);
+    min-height: 70vh;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #E0AED0 !important;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 100%;
+    min-height: 10vh;
+    padding: 3em;
+    margin: auto ;
+    padding: 1em;
+    overflow: hidden
+}
+section {
+    width: 99%;
+    margin: 10px auto
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {width: 750px}
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {width: 970px}
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {width: 1170px}
+}
+  /* End Global Rules */
+
+/* S-Header */
+header {
+    position: fixed;
+    top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 99.9%;
+    min-height: 7vh;
+    background-color: #eee;
+    margin: auto
+}
+header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    max-width: 300px;
+    margin: auto;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+header h1 p {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold
+}
+/* E-header */
+
+
+/* S-Main */
+/* content */
+    .content span, .end {
+        width: 100%;
+        direction: rtl;
+        color: black
+    }
+    .content h3, .content h3 p {
+        direction: ltr;
+        color: black;
+        font-weight: 800;
+    }
+    .end {text-align: center}
+    .end span {
+        min-width: 250px;
+        padding: 7px;
+        margin: auto;
+        margin-bottom: 5px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .end p {
+        margin-top: 7px;
+        color: black
+    }
+    span.number {
+        border: none;
+        padding: 0
+    }
+/* card */
+    .social-media {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        margin: auto
+    }
+    .social-media h4 {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        padding: 12px;
+        font-weight: 800;
+        color: black
+    }
+    .social-media span {
+        width: 100%;
+        direction: rtl;
+        text-align: center;
+        padding: 3px;
+        color: black
+    }
+    .social-media .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 73%;
+        margin: auto;
+        gap: 10px
+    }
+
+    /* Medium */
+    @media (min-width: 992px) {.social-media .buttons {max-width: 73%}}
+    /* Large */
+    @media (min-width: 1200px) {.social-media .buttons {max-width: 50%}}
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        width: 250px;
+        padding: 7px;
+        margin: auto;
+        border: 1px solid black;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .card a {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: auto
+    }
+    .card a h3 {
+        width: 80%;
+        color: black;
+        font-weight: 600;
+    }
+    /* E-Main */
+
+/* Start footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: #eee;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 3.7vh
+}
+footer .social-buttom {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center
+}
+footer .social-buttom p { 
+    font-size: 12px;
+    text-align: center;
+    color: #eee;
+    width: 35%
+}
+footer .social-buttom .icons {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 200px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center
+}
+footer .social-buttom .icons i .fab, footer .social-buttom .icons i .fa,
+footer .social-buttom .icons i .fa-solid {
+    color: #eee;
+    display: flex;
+    margin-left: 4px;
+    font-size: 14px
+}
+footer .mylogo {
+    font-size: 12px;
+    width: 40%;
+    font-family: Playfair Display;
+    font-size: 14px;
+    text-align: center;
+    color: #eee;
+    text-transform: capitalize
+}
+footer .mylogo a {
+    font-size: 12px;
+    width: fit-content;
+    color: #eee;
+    text-decoration: underline
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center
+    }
+}
+/* Extra - Large devices (extre - large desktops, 1900px and up) */
+@media (min-width: 1900px) {
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center
+    }
+}
+/* End footer */
